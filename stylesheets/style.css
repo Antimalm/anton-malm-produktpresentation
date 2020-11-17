@@ -1,31 +1,7 @@
-
-  
-  .item {
-    flex-grow: 1;
-    height: 100px;
-  }
-  
-  .item {
-    margin-left:5%;
-    margin-right: 5%;
-    margin-top: 125px;
-
-  }
-
-  .item {
-    display:flex;
-    align-content: space-evenly;
-    height: 380px;
-    width: 100px;
-    border-radius: 3px;
-    background-color: lightgreen;
-    border: 2px solid darkslategray;
-    box-sizing: border-box;
-  }
-
 .navbar {
   display:flex;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Fixar flex på min navbar, och byter min font till en jag hittat på google som skulle likna insta.  */
 }
 
 .menu {
@@ -47,6 +23,7 @@
   background-color: rgb(147, 173, 167);
   border: 3px solid black;
   box-sizing: border-box;
+  /* Fixar flex på baren igen och fixar till det jag vill med styling, färg, border, position m.m.  */
 }
 .menu1 {
   flex-grow:1;
@@ -66,6 +43,16 @@
   background-color: lightslategray;
   border: 3px solid white;
   box-sizing: border-box;
+  /* Detta är min meny för navbar på produktfliken och den är i princip samma som den ovan bara med lite andra färger.  */
+}
+.h2 {
+  padding: 0%;
+  margin:0%;
+  margin-left:50%;
+  margin-top:5%;
+  position: absolute;
+
+
 }
 
 .body {
@@ -73,13 +60,15 @@
   margin: 0%;
   background-image: url('../bilder/Image.png');
   background-size: cover;
+  /* fixar så att min body inte har någon padding så att jag kan placera min footer där jag vill ha den,
+  jag importerar även in min bakgrundssbild som jag har å sidan.  */
 }
 .body2 {
   padding:0%;
   margin: 0%;
   background-image: url('../bilder/wallpaper3.jpg');
   background-size: cover;
-
+  /* samma i den ovan */
 }
 
 .container {
@@ -92,60 +81,70 @@
   margin-top: -350px;
   position: flex;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Detta är min flex för mina produkter och här fixar jag bilderna så att dom är evenly positioned 
+  tilsammans och att de är rätt höjd från toppen av sidan. */
 }
 .item1 {
   display: flex;
-  margin-top: 75%;
+  margin-top: 81%;
   color: white;
+  text-decoration: none;
   font-size: 18px;
+  /* Småfix, position och font-size och färg.  */
 }
 
 .item2 {
   display: flex;
-  margin-top: 92%;
+  margin-top: 100%;
   color: white;
   font-size: 18px;
+    /* Småfix, position och font-size och färg.  */
 }
 
-.item3 {
+.item3{
   display: flex;
-  margin-top: 75%;
+  margin-top: 84%;
   color: white;
-  font-size: 18px;
-
-}
-.item4{
-  display: flex;
-  margin-top: 90%;
-  color: white;
+    /* Småfix, position och font-size och färg.  */
 }
 .menu:hover {
   background-color: darkgray;
   color: black;
   font-size: 20px;
+    /* Småfix och font-size och färg.  */
 }
 .item1:hover {
-  @-webkit-keyframes hvr-pulse-grow 
+
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+    /* Drog in ett bibliotek med hover funktioner i css, detta är en av dem. som gör så bilden blir större 
+    när man hovrar över dem. */
 }
 
 .item2:hover {
-  @-webkit-keyframes hvr-pulse-grow 
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+    /* Drog in ett bibliotek med hover funktioner i css, detta är en av dem. som gör så bilden blir större 
+    när man hovrar över dem. */
 
 }
 .item3:hover {
-  @-webkit-keyframes hvr-pulse-grow 
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-
+    /* Drog in ett bibliotek med hover funktioner i css, detta är en av dem. som gör så bilden blir större 
+    när man hovrar över dem. */
 }
+
+.item4:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+    /* Drog in ett bibliotek med hover funktioner i css, detta är en av dem. som gör så bilden blir större 
+    när man hovrar över dem. */
+}
+
 .footer{
   background-color: rgb(201, 196, 193);
   display: flex;
-  position: fixed;
   left: 0;
   width: 80%;
   padding: 1px;
@@ -157,14 +156,33 @@
   margin-left: 10%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: lightgray;
+  text-decoration: none;
+  /*Fixar postion och färg så som jag vill ha den och textsnitt.  */
 }
 .ftxt{
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+   /* ändrar font i footer.  */
 }
+.ftxt1 {
+  position: absolute;
+  right: auto;
+  font-size:12px;
+  color:black;
+
+}
+
 .h1 {
 position: absolute;
 color: white;
-right:40%;
+right:36%;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Sätter positionen till absolute och ändrar färgen, positionerar den och ändrar font. */
 }
 
+.item4 {
+  display:flex;
+  margin-top:90%;
+  color:white;
+
+}
