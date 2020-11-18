@@ -12,8 +12,6 @@
   background: #616161;
   width: 650px;
   height: 37px;
-
-  display:flex;
   align-content: space-evenly;
   color: white;
   margin-left:5%;
@@ -51,11 +49,10 @@
   margin-left:50%;
   margin-top:5%;
   position: absolute;
-
-
 }
 
 .body {
+  flex-grow:1;
   padding:0%;
   margin: 0%;
   background-image: url('../bilder/Image.png');
@@ -73,6 +70,7 @@
 
 .container {
   display:flex;
+  flex-grow:1;
   align-content: space-evenly;
   align-content: center;
   flex-direction: row;
@@ -108,13 +106,14 @@
     /* Småfix, position och font-size och färg.  */
 }
 .menu:hover {
+  display: flex;
   background-color: darkgray;
   color: black;
   font-size: 20px;
     /* Småfix och font-size och färg.  */
 }
 .item1:hover {
-
+  display:flex;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
     /* Drog in ett bibliotek med hover funktioner i css, detta är en av dem. som gör så bilden blir större 
@@ -186,3 +185,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   color:white;
 
 }
+
+
+
